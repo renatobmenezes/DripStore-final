@@ -125,7 +125,7 @@ frontend/
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/renatobmenezes/DripStore.git
+git clone https://github.com/renatobmenezes/DripStore-final
 ```
 
 ### 2. Acessar o projeto
