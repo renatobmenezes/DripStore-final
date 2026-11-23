@@ -1,0 +1,52 @@
+### Variáveis Globais
+@baseUrl = http://localhost:3000
+@productId = 1
+
+### 1. Listar Todos os Produtos
+GET {{baseUrl}}/products
+Content-Type: application/json
+
+###
+
+### 2. Obter Produto por ID
+GET {{baseUrl}}/products/6
+Content-Type: application/json
+
+###
+
+### 3. Criar Novo Produto
+# Lembre-se: Você precisa ter criado a categoria (ID 1) antes!
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+  "name": "Tênis Drip Special Edition",
+  "slug": "tenis-drip-special-edition",
+  "price": 450.00,
+  "priceWithDiscount": 399.90,
+  "enabled": true,
+  "stock": 25,
+  "category_ids": [1],
+  "images": [
+    { "path": "https://images.com/tenis-01.jpg", "enabled": true }
+  ],
+  "options": [
+    { "title": "Tamanho", "values": "40, 41, 42", "type": "text" }
+  ]
+}
+
+###
+
+### 4. Atualizar Produto (Preço e Estoque)
+PUT {{baseUrl}}/products/6
+Content-Type: application/json
+
+{
+  "price": 499.90,
+  "stock": 15
+}
+
+###
+
+### 5. Deletar Produto
+DELETE {{baseUrl}}/products/5
