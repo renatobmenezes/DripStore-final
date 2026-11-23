@@ -165,7 +165,7 @@ _Estrutura de referência baseada nos arquivos apresentados durante o desenvolvi
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/renatobmenezes/DripStore.git
+git clone https://github.com/renatobmenezes/DripStore-final
 ```
 
 ### 2. Acessar a pasta do backend
